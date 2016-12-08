@@ -19,6 +19,10 @@ app.get('/about.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'about.html'))
 })
 
+app.get('/contact.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'contact.html'))
+})
+
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
